@@ -234,6 +234,43 @@ Pour une experience plus propre et reproductible:
 4. conserver les sorties importantes dans des notes de mission;
 5. revenir au menu principal avec `back` avant de changer de module.
 
+## Workflow Jira de maintenance
+
+Un workflow Jira specifique a ete cree pour organiser la maintenance de ce fork et imposer une validation croisee de l'equipe.
+
+### Etats
+
+- `IDEE`
+- `EN COURS`
+- `EN COURS DE REVUE`
+- `TERMINE`
+
+### Regles de gouvernance
+
+- les revues sont creees par les developpeurs uniquement: la transition vers `EN COURS DE REVUE` est declenchee par un dev quand il estime la tache prete pour verification;
+- la sortie de revue est reservee a un role Jira specifique (ex: `Maintainer`/`Lead Reviewer`), pas a l'auteur de la modification;
+- la validation finale exige une autre personne de l'equipe (principe de separation auteur/relecteur).
+
+### Transitions contraintes
+
+- `Debut -> IDEE` (`Create`)
+- `IDEE -> EN COURS` (`En cours de dev`)
+- `EN COURS -> EN COURS DE REVUE` (`Tests`)
+- `EN COURS DE REVUE -> TERMINE` (`Tests OK`) uniquement pour le role de validation
+- `EN COURS DE REVUE -> EN COURS` (`Test Non OK`) si corrections requises
+
+Ce schema contraint les passages d'etat et evite un contournement du controle qualite (pas de passage direct de `EN COURS` a `TERMINE`).
+
+### Captures du workflow
+
+Vue des etats et transitions Jira:
+
+![Workflow Jira - etats et transitions](images/workflow-jira-transitions.png)
+
+Vue diagramme simplifie du flux:
+
+![Workflow Jira - diagramme](images/workflow-jira-diagram.png)
+
 ## Plan d'evolution du fork
 
 ### Milestone M1 - Ergonomie de base
