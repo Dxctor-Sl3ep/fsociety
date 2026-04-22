@@ -268,6 +268,16 @@ Use fsociety only for legal and authorized security testing, research, and educa
 
 You are responsible for obtaining explicit permission before scanning, enumerating, testing, or exploiting any system, network, application, account, or data. Unauthorized activity may violate law and policy.
 
+## Contributing
+### Development team
+- [MatheoCASSY](https://github.com/MatheoCASSY)
+- [Dxctor-_Sl3ep](https://github.com/Dxctor-_Sl3ep)
+### Product Owner
+- [Alexandre Sanchez](https://github.com/sonical0)
+### Scrum Master
+- [Xavier SANCHEZ](https://github.com/xaviersanc)
+### Link to the Jira board
+**[Jira](https://ecoles-epsi-team-aahugiq5.atlassian.net/jira/software/projects/KAN/list?jql=project%20%3D%20KAN%20ORDER%20BY%20cf%5B10019%5D%20ASC)**
 ## License
 
 This software is licensed under the [MIT](https://github.com/fsociety-team/fsociety/blob/main/LICENSE) License.
